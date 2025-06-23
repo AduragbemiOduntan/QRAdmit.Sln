@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\QRAdmit_Domain\QRAdmit_Domain.csproj" />
+    <ProjectReference Include="..\QRAdmit_Infrastructure\QRAdmit_Infrastructure.csproj" />
+    <ProjectReference Include="..\QRAdmit_Service\QRAdmit_Service.csproj" />
+    <ProjectReference Include="..\QRAdmit_Shared\QRAdmit_Shared.csproj" />
+  </ItemGroup>
+
+</Project>
