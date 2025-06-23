@@ -361,3 +361,5 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/QRAdmit_Api/appsettings.json
+/QRAdmit_Api/appsettings.Development.json
